@@ -11,8 +11,12 @@
     ],
     "routes": [
       {
-        "src": "/(.*)",
-        "dest": "/build/$1"
+        "src": "/",
+        "dest": "/"
+      },
+      {
+        "src": "/test",
+        "dest": "/"
       }
     ]
   }
