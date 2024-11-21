@@ -1,17 +1,11 @@
 {
-    "cleanUrls": true,  
-  "trailingSlash": false,  
+    "cleanUrls": true,
+    "trailingSlash": false,
     "builds": [
       {
         "src": "package.json",
-        "use": "@vercel/static-build",
-        "config": {
-          "buildCommand": "npm run build", 
-          "outputDirectory": "build"
-        }
+        "use": "@vercel/next"
       }
-    ],
-    "rewrites": [{ "source": "/(.*)", "destination": "/" }]
-
+    ]
   }
   
